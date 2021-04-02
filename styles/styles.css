@@ -115,6 +115,7 @@ hr {
     transition: opacity 0.3s ease-in-out;
     position: relative;
     display: block;
+    width: 120%;
 }
 
 .list-group .position-absolute:first-child {
