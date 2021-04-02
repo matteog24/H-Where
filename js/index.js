@@ -28,20 +28,32 @@ function checkScreen() {
 
 function change(value) {
     let category = document.getElementById('category');
+    let categoryList = document.getElementById('category2')
     let alfabeto = document.getElementById('alfabeto');
     let alfabetoList = document.getElementById('alfabeto2');
 
-    console.log(alfabeto);
     if (value == alfabeto) {
         category.style.opacity = "0.4"
         alfabeto.style.opacity = "1"
+
         alfabetoList.style.overflow = "visible"
         alfabetoList.style.opacity = "1"
+        alfabetoList.style.height = "auto"
+
+        categoryList.style.opacity = "0"
+        categoryList.style.overflow = "hidden"
+        categoryList.style.height = "0"
     }
     else if (value == category) {
         alfabeto.style.opacity = "0.4"
         category.style.opacity = "1"
+
+        categoryList.opacity = "1"
+        categoryList.overflow = "visible"
+        categoryList.style.height = "auto"
+
         alfabetoList.style.opacity = "0"
         alfabetoList.style.overflow = "hidden"
+        alfabetoList.style.height = "0"
     }
 }

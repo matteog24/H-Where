@@ -125,3 +125,7 @@ hr {
 .list-group .position-absolute:last-child {
     border-bottom-left-radius: 30px;
 }
+
+#alfabeto2, #category2 {
+    transition: opacity 0.3s ease-in-out;
+}
