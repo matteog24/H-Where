@@ -48,12 +48,12 @@ function change(value) {
         alfabeto.style.opacity = "0.4"
         category.style.opacity = "1"
 
-        categoryList.opacity = "1"
-        categoryList.overflow = "visible"
+        categoryList.style.overflow = "visible"
+        categoryList.style.opacity = "1"
         categoryList.style.height = "auto"
 
         alfabetoList.style.opacity = "0"
         alfabetoList.style.overflow = "hidden"
-        alfabetoList.style.height = "0"
+        alfabetoList.style.height = "0"        
     }
 }
