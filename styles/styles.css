@@ -1,0 +1,126 @@
+body {
+    padding: 1.5em;
+    background: #161616;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.container-flex {
+    position: relative; 
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    height: 100%;
+    position: absolute;
+    left: 0%;
+}
+
+.list-group-item:first-child {
+    border-top-right-radius: 30px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 30px;
+}
+
+.list-group-item {
+    text-align: center;
+    padding: 12px;
+}
+
+.landing-page {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.navbar {
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.navbar-brand {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin: -35px 0 0 -35px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    height: 32%;
+    border: transparent;
+    background-color: transparent;
+}
+
+.card-img {
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    border: transparent;
+}
+
+.text-white {
+    text-shadow: black;
+}
+
+.navbar-expand-md {
+    background-color: #161616;
+}
+
+hr {
+    background-color: #eee;
+    color: #eee;
+    height: 10px;
+    opacity: 0.7;
+}
+
+.list-button {
+    width: 30%;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.list-group {
+    transition: opacity 0.3s ease-in-out;
+    position: relative;
+    display: block;
+}
+
+.list-group .position-absolute:first-child {
+    border-top-left-radius: 30px;
+}
+
+.list-group .position-absolute:last-child {
+    border-bottom-left-radius: 30px;
+}
