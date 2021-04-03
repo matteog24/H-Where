@@ -1,4 +1,4 @@
-let device = document.querySelector('body');
+/* let device = document.querySelector('body');
 let div = document.querySelectorAll('div');
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -24,7 +24,7 @@ function checkScreen() {
         text.remove();
         $(div).show(); 
     }
-}
+} */
 
 function change(value) {
     let category = document.getElementById('category');

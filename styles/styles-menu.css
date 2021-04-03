@@ -1,16 +1,3 @@
-@font-face {
-    font-family: 'monument_extendedregular';
-    src: url(./MonumentExtended-Regular.otf);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'monument_extendedbold';
-    font-weight: bold;
-    src: url(./MonumentExtended-Ultrabold.otf);
-}
-
-
 *{
     padding: 0;
     margin: 0;
@@ -27,7 +14,7 @@
 }
 
 body{
-    font-family: 'monument_extendedregular';
+    font-family: 'Helvetica Neue';
     background: #161616;
     overflow: hidden;
 }
@@ -324,6 +311,12 @@ section{
     transform: translateY(0) rotate(45deg);
 }
 
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 @keyframes animation{
     from{
         opacity: 0;
@@ -480,3 +473,4 @@ section{
         transform: translateY(15px);
     }
 }
+
