@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>
+      H-Where?
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <link rel="icon" href="../assets/favicon.png" type="image/icon type">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <nav class="navbar-expand-md fixed-top">
+      <div class="navbar container-fluid bg-light">
+        <a href="../index.html" style="color: black;"><i class="bi bi-arrow-left-square-fill"></i></a>
+        <a class="navbar-brand text-center" style="color: #161616;" href="#"><i class="bi bi-map"></i> Map</a>
+      </div>
+    </nav>
+
+    <div style="margin-bottom: 60px;"></div>
+
+    <section>
+        <div>
+            <img src="../assets/map.png" width="100%" alt="Map of the campus" usemap="#campus-map">
+            
+            <map name="campus-map">
+              <area shape="rect" coords="0,0,82,126" href="#directions-text" onclick="" alt="PYP">
+              <area shape="circle" coords="90,58,3" href="#directions-text" alt="MYP">
+              <area shape="circle" coords="124,58,8" href="#directions-text" alt="H-Farm College">
+              <area shape="" coords="" href="" alt="">
+            </map>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="directions">
+        <div style="color: white;">
+            <li><div class="square-gradient" style="background-image: linear-gradient(to right, #FF004F, #FF0075)"></div> Schools📚</li>
+            <li><div class="square-gradient" style="background-image: linear-gradient(to right, #FF8500, #FFC900)"></div> Sports🏋️</li>
+            <li><div class="square-gradient" style="background-image: linear-gradient(to right, #00CBFF, #00FFDB)"></div> Convention🎤</li>
+            <li><div class="square-gradient" style="background-image: linear-gradient(to right, #DD52E5, #81B5F9)"></div> Restaurants🧑‍🍳</li>
+        </p></div>
+        <hr>
+        <div id="directions-text"></div>
+    </section>
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
