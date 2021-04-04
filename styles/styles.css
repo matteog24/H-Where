@@ -146,3 +146,7 @@ hr {
 .directions {
     width: 100%;
 }
+
+#directions-text {
+    color: white;
+}
