@@ -63,7 +63,12 @@ function getDirections(startPole, place) {
     let directionsText = document.getElementById('directions-text');
     let directionsArray = [];
     let listOfDirections = [];
-    let list = document.getElementById("list");
+    let list = document.getElementById('list');
+    // let svg = document.getElementById('campus-map-photo');
+    // let myp_pin = document.getElementById('myp-dp');
+    // let pyp_pin = document.getElementById('pyp');
+
+    // (myp_pin, pyp_pin).style.opacity = "0.3"
 
     if (directionsText.childElementCount = 1) {
         directionsText.innerHTML = ""
