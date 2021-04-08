@@ -131,4 +131,5 @@ function getDirections(startPole, place) {
     }
 
     directionsText.appendChild(heading, list)
+    
 }
