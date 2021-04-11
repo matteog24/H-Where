@@ -93,7 +93,7 @@ body {
     height: 40%;
     border: transparent;
     background-color: transparent;
-    width: 99%;
+    width: 100%;
     padding: 5px;
 }
 
@@ -212,4 +212,18 @@ p {
     padding-left: 20px;
     padding-right: 20px;
     font-size: calc(1rem + 1.5vw);
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    margin: 0 0 1rem 0; */
+}
+
+.grid > a {
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
 }
