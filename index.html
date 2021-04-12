@@ -84,7 +84,8 @@
 
         function padding() {
           if (w >= 600) {
-            $(".row-cols-2").toggleClass('row-cols-3');
+            $(".row-cols-2").addClass('row-cols-3');
+            $(".row-cols-3").removeClass('row-cols-2');
             loop(icons, true);
             if (h <= 400) {
               grid.style.cssText = "padding-top: 30%";
@@ -94,7 +95,8 @@
             }
           }
           else if (w <= 600) {
-            $(".row-cols-3").toggleClass('row-cols-2');
+            $(".row-cols-3").addClass('row-cols-2');
+            $(".row-cols-2").removeClass('row-cols-3');
             loop(icons, false);
           }
           if (w/h <= 0.7 || w/h <= 1) {
@@ -104,12 +106,12 @@
           function loop(element, value) {
             if (value == true) {
               for (let a = 0; a < element.length; a++) {
-                element[a].style.cssText = "margin-left: 50%";
+                element[a].style.marginLeft = "50%";
               }
             }
             if (value == false) {
               for (let a = 0; a < element.length; a++) {
-                element[a].style.cssText = "margin-left: 70%";
+                element[a].style.marginLeft = "70%";
               }
             }
           }

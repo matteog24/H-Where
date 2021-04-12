@@ -54,7 +54,13 @@ function change(value) {
 
         alfabetoList.style.opacity = "0"
         alfabetoList.style.overflow = "hidden"
-        alfabetoList.style.height = "0"        
+        alfabetoList.style.height = "0"    
+        
+        let elementsOfList = document.querySelectorAll('#list');
+
+        for (let a = 0; a < elementsOfList.length; a++) {
+          elementsOfList[a].style.cssText = "heigth: auto";
+        }
     }
 }
 
