@@ -1,19 +1,8 @@
-/* let device = document.querySelector('body');
-let div = document.querySelectorAll('div');
+
 let w = window.innerWidth;
 let h = window.innerHeight;
-const text = document.createElement('h1');
 
-$(document).ready(function(){
-    checkScreen();
-    $(window).resize(function(){
-        w = window.innerWidth;
-        h = window.innerHeight;
-        checkScreen();
-    });
-});
-
-function checkScreen() {
+/* function checkScreen() {
     if (w > 1200) {
         $(div).hide();
         text.innerText = "Sorry, your device is too big!"
@@ -40,6 +29,8 @@ function change(value) {
         alfabetoList.style.opacity = "1"
         alfabetoList.style.height = "auto"
 
+        checkListElement("height", alfabetoList)
+
         categoryList.style.opacity = "0"
         categoryList.style.overflow = "hidden"
         categoryList.style.height = "0"
@@ -56,14 +47,43 @@ function change(value) {
         alfabetoList.style.overflow = "hidden"
         alfabetoList.style.height = "0"    
         
+        checkListElement("width", categoryList);
+
         let elementsOfList = document.querySelectorAll('#list');
 
-        for (let a = 0; a < elementsOfList.length; a++) {
-          elementsOfList[a].style.cssText = "heigth: auto";
-        }
+        setHeight(elementsOfList, "50%");
     }
 }
 
+function setHeight(element, value) {
+
+    for (let a = 0; a < element.length; a++) {
+        element[a].style.height = value;
+      }
+}
+
+function checkListElement(propriety, element) {
+    w = window.innerWidth;
+    h = window.innerHeight;
+
+    if (propriety == "height") {
+        if (h <= 300) {
+            element.style.height = "auto";
+        }
+        else if (h >= 300) {
+            element.style.height = "100%"
+        }
+    }
+    else if (propriety == "width") {
+        if (w <= 500) {
+            element.style.height = "auto";
+        }
+        else if (w >= 600 || h <= 400) {
+            element.style.height = "95%"
+        }
+    }
+}
+    
 function getDirections(startPole, place) {
 
     let directionsText = document.getElementById('directions-text');

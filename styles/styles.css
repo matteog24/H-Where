@@ -234,3 +234,23 @@ p {
 .grid > a {
     flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
 }
+
+@media only screen and (min-width: 600px) {
+    #category2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #category2 > hr {
+        display: none;
+    }
+
+    #category2 > * {
+        flex: 50%;
+    }
+
+    .list-group {
+        height: 100%;
+    }
+    
+  }

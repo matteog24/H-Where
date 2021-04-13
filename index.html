@@ -88,10 +88,10 @@
             $(".row-cols-3").removeClass('row-cols-2');
             loop(icons, true);
             if (h <= 400) {
-              grid.style.cssText = "padding-top: 30%";
+              grid.style.paddingTop = "30%";
             }
             else {
-              grid.style.cssText = "padding-top: 0%";
+              grid.style.paddingTop = "0%";
             }
           }
           else if (w <= 600) {
@@ -100,7 +100,7 @@
             loop(icons, false);
           }
           if (w/h <= 0.7 || w/h <= 1) {
-            grid.style.cssText = "padding-top: 20%"
+            grid.style.paddingTop = "20%"
           }
 
           function loop(element, value) {
