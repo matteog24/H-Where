@@ -51,7 +51,7 @@ function change(value) {
 
         let elementsOfList = document.querySelectorAll('#list');
 
-        setHeight(elementsOfList, "50%");
+        setHeight("height", elementsOfList);
     }
 }
 
@@ -71,7 +71,7 @@ function checkListElement(propriety, element) {
             element.style.height = "auto";
         }
         else if (h >= 300) {
-            element.style.height = "100%"
+            element.style.height = "85%"
         }
     }
     else if (propriety == "width") {
@@ -79,7 +79,7 @@ function checkListElement(propriety, element) {
             element.style.height = "auto";
         }
         else if (w >= 600 || h <= 400) {
-            element.style.height = "95%"
+            element.style.height = "85%"
         }
     }
 }
