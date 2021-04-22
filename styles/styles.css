@@ -143,9 +143,6 @@ body {
     border: transparent;
 }
 
-.text-white {
-    text-shadow: black;
-}
 
 /* .navbar-expand-md {
     background-color: #161616;
@@ -265,6 +262,11 @@ p {
 
 .grid > a {
     flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+}
+
+.navbar-expand-md {
+    background-image: linear-gradient(top, #161616, #161616 70%, transparent 70%, transparent 100%);
+    background-image: -webkit-linear-gradient(top, #161616, #161616 50%, transparent 100%, transparent 0%);
 }
 
 @media only screen and (min-width: 600px) {
