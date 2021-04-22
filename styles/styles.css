@@ -21,7 +21,9 @@ body {
     height: 100%;
     display: block;
     object-fit: cover;
-    border-radius: 20px;
+    position: fixed;
+    margin: -1.5rem;
+
 }
 
 .container {
@@ -118,9 +120,9 @@ body {
     text-shadow: black;
 }
 
-.navbar-expand-md {
+/* .navbar-expand-md {
     background-color: #161616;
-}
+} */
 
 hr {
     background-color: #eee;
@@ -260,4 +262,4 @@ p {
         height: 85%;
     }
     
-  }
+}
