@@ -96,11 +96,31 @@ body {
 .card {
     margin-bottom: 20px;
     border-radius: 20px;
-    height: 40%;
+    height: 15rem;
     border: transparent;
     background-color: transparent;
     width: 100%;
     padding: 5px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.card:hover > .image-icons {
+    text-shadow: -10px -4px 10px #0000003a;
+    transition-duration: 0.3s;
+    -webkit-transition-property: text-shadow;
+    transition-property: text-shadow;
 }
 
 .menù > .position-absolute > .container > .row > .col {
@@ -213,7 +233,6 @@ p {
     margin-top: 40%;
     margin-left: 70%;
     transform: rotate(35deg);
-    text-shadow: -10px -4px 10px #0000003a;
 }
 
 .menù > .navbar-expand-md > .navbar {
