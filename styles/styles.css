@@ -110,7 +110,7 @@ body {
     transition-property: box-shadow, transform;
 }
 
-.a-for-card > .card:hover {
+.card:hover.a-for-card {
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
 }
@@ -272,7 +272,7 @@ p {
     margin: 0 0 1rem 0; */
 }
 
-.grid > a {
+.grid > div {
     flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
 }
 
