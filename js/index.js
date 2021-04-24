@@ -29,7 +29,7 @@ function change(value) {
         alfabetoList.style.opacity = "1"
         alfabetoList.style.height = "auto"
 
-        checkListElement("height", alfabetoList)
+        checkListElement("height", alfabetoList);
 
         categoryList.style.opacity = "0"
         categoryList.style.overflow = "hidden"
@@ -59,7 +59,7 @@ function setHeight(element, value) {
 
     for (let a = 0; a < element.length; a++) {
         element[a].style.height = value;
-      }
+    }
 }
 
 function checkListElement(propriety, element) {
