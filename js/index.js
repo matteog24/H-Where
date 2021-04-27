@@ -90,6 +90,10 @@ function getDirections(startPole, place) {
     let directionsArray = [];
     let listOfDirections = [];
     let list = document.getElementById('list');
+
+    let iframeSection = document.getElementById('iframe');
+
+    iframeSection.innerHTML = '';
     // let svg = document.getElementById('campus-map-photo');
     // let myp_pin = document.getElementById('myp-dp');
     // let pyp_pin = document.getElementById('pyp');
@@ -102,11 +106,14 @@ function getDirections(startPole, place) {
 
     let heading = document.createElement('h2');
     heading.id = 'directions-text'
+    let iframe = document.createElement('iframe');
 
     if (startPole == 1) {
         if (place == 'myp') {
             heading.innerHTML = "MYP & DP";
             directionsArray = ['⬆️ for 100m', '➡️'];
+            iframe.src = 'https://orbix360.com/t/lCJMyrscsaMtFmjmgxmtOXsa5wp2/5143489931116544/test?embed=yes'
+            
         }
         else if (place == 'pyp') {
             heading.innerHTML = "PYP";
@@ -152,10 +159,14 @@ function getDirections(startPole, place) {
         directionsArray.forEach(function(element) {
             listOfDirections.push("<li>" + element + "</li>");
         });
-          
+        
         list.innerHTML = listOfDirections.join('');
     }
 
-    directionsText.appendChild(heading, list)
+    directionsText.appendChild(heading, list);
+
+    if (iframe.src !== '') {
+        iframeSection.append(iframe, document.createElement('hr'));
+    }
     
 }

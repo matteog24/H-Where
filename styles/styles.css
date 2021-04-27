@@ -280,6 +280,11 @@ p {
     flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
 }
 
+iframe {
+    width: 100%; 
+    height: 90%;
+}
+
 .navbar-expand-md {
     background-image: linear-gradient(top, #161616, #161616 70%, transparent 70%, transparent 100%);
     background-image: -webkit-linear-gradient(top, #161616, #161616 50%, transparent 100%, transparent 0%);
