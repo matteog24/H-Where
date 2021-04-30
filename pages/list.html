@@ -66,22 +66,27 @@
 
     <script>
   
-      randomGradient = [
-        'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)',
-        'linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)',
-        'linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)',
-        'linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%)',
-        'linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)',
-        'linear-gradient(90deg, #1CB5E0 0%, #000851 100%)',
-        'linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%)',
-        'linear-gradient(90deg, #9ebd13 0%, #008552 100%)',
-        'linear-gradient(90deg, #d53369 0%, #daae51 100%)',
+      randomColor = [
+        '#258469',
+        '#E8105B',
+        '#8C66AA',
+        '#1E3363',
+        '#497C94',
+        '#BB5D0A',
+        '#178906',
+        '#8C66AA',
+        '#767776',
+        '#E13301',
+        '#1E3164',
+        '#258469',
+        '#A76752',
+        '#E8105B'
       ]
 
       let list = document.querySelectorAll('.list-group-item-action');
 
       for (let a = 0; a < list.length; a = a + 1) {
-        list[a].style.backgroundImage = randomGradient[a];
+        list[a].style.backgroundColor = randomColor[a];
       }
 
     </script>

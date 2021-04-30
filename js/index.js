@@ -27,7 +27,7 @@ function change(value) {
 
         alfabetoList.style.overflow = "visible"
         alfabetoList.style.opacity = "1"
-        alfabetoList.style.height = "auto"
+        alfabetoList.style.height = "35rem"
 
         checkListElement("height", alfabetoList);
 
@@ -41,7 +41,7 @@ function change(value) {
 
         categoryList.style.overflow = "visible"
         categoryList.style.opacity = "1"
-        categoryList.style.height = "auto"
+        categoryList.style.height = "35rem"
 
         alfabetoList.style.opacity = "0"
         alfabetoList.style.overflow = "hidden"
@@ -71,7 +71,7 @@ function checkListElement(propriety, element) {
             element.style.height = "auto";
         }
         else if (h >= 300) {
-            element.style.height = "85%"
+            element.style.height = "35rem"
         }
     }
     else if (propriety == "width") {
@@ -79,7 +79,7 @@ function checkListElement(propriety, element) {
             element.style.height = "auto";
         }
         else if (w >= 600 || h <= 400) {
-            element.style.height = "85%"
+            element.style.height = "35rem"
         }
     }
 }
