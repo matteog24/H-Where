@@ -76,10 +76,10 @@ function checkListElement(propriety, element) {
     }
     else if (propriety == "width") {
         if (w <= 500) {
-            element.style.height = "auto";
+            element.style.height = "20rem";
         }
         else if (w >= 600 || h <= 400) {
-            element.style.height = "35rem"
+            element.style.height = "20rem"
         }
     }
 }

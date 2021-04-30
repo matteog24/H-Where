@@ -171,7 +171,7 @@ hr {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 15rem;
     transition: left 0.3s ease-in-out;
 }
 
@@ -288,6 +288,18 @@ iframe {
 }
 
 @media only screen and (min-width: 600px) {
+
+    .flex {
+        display: flex;
+        flex: 50%;
+    }
+
+    #directions {
+        position: fixed;
+        left: 75%;
+        text-shadow: 2px 5px 10px #0000007c;
+    }
+
     #category2 {
         display: flex;
         flex-wrap: wrap;
@@ -304,7 +316,7 @@ iframe {
     }
 
     .list-group {
-        height: 85%;
+        height: 25rem;
     }
     
 }
