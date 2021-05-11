@@ -263,15 +263,33 @@ iframe {
     transition-duration: 0.2s;
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
-  }
+}
 
-  .list-group-item:hover {
+.list-group-item:hover {
     box-shadow: 0 10px 20px -10px rgba(87, 87, 87, 0.5);
     color: black;
     text-shadow: 2px 5px 10px #0000007c;
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
-  }
+}
+
+.events-images {
+    /* height: 90% */
+}
+
+.table {
+    overflow-x:scroll;
+    overflow-y:visible;
+}
+
+.events-images > .table > img {
+    /* height: 90%; */
+}
+
+.events-images > .d-flex > .float-start {
+    position: absolute;
+    margin: auto;
+}
 
 /* .list-group-item {
     background: rgb(34,193,195); background: linear-gradient(270deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
