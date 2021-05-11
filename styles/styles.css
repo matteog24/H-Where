@@ -273,17 +273,13 @@ iframe {
     transform: scale(1.02);
 }
 
-.events-images {
-    /* height: 90% */
-}
-
 .table {
-    overflow-x:scroll;
-    overflow-y:visible;
+    overflow-x: scroll;
+    overflow-y: visible;
 }
 
 .events-images > .table > img {
-    /* height: 90%; */
+    height: 40rem;
 }
 
 .events-images > .d-flex > .float-start {
@@ -291,9 +287,9 @@ iframe {
     margin: auto;
 }
 
-/* .list-group-item {
-    background: rgb(34,193,195); background: linear-gradient(270deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-} */
+.events-images > .d-flex > .float-end {
+    margin-left: 13rem;
+}
 
 @media only screen and (max-width: 500px) {
     .card-img-overlay > .card-title {
