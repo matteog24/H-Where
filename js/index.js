@@ -105,7 +105,7 @@ function getDirections(startPole, place) {
     }
 
     let heading = document.createElement('h2');
-    heading.id = 'directions-text'
+    heading.id = 'directions-text';
     let iframe = document.createElement('iframe');
 
     if (startPole == 1) {
