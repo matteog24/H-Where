@@ -3,6 +3,7 @@
     <title>
       H-Where?
     </title>
+    <link rel="stylesheet" href="../../styles/bulma.css">
     <link rel="stylesheet" href="../../styles/styles-menu.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/favicon.ico"/>
     <link rel="apple-touch-icon" href="../../assets/favicon.ico">
@@ -10,7 +11,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="manifest" href="../../manifest.json">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
   </head>
 
@@ -55,8 +55,17 @@
                             </div> -->
                         </li>
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="#">Map of the building<i class="fas fa-caret-down"></i></a> <!--onclick="mapWindow('open')"-->
+                            <a data-target=".modal" onclick="mapWindow('open')">Map of the building<i class="fas fa-caret-down"></i></a>
                         </li>
+                        <div class="modal" id="map-show">
+                            <div class="modal-background"></div>
+                            <div>
+                              <p class="image is-4by3">
+                                <img src="../../assets/timetable/4b/myp.png" alt="">
+                              </p>
+                            </div>
+                            <button class="modal-close is-large" aria-label="close" onclick="mapWindow('close')"></button>
+                        </div>
                         <li class="nav-link" style="--i: 1.35s">
                             <a div href="https://www.h-farm.com/en/h-farm-school/treviso" target="_blank">About</a>
                         </li>
@@ -81,7 +90,7 @@
     </main>
 
     <script>
-        let mapWindowDiv = document.querySelector('.map-show')
+        let mapWindowDiv = document.querySelector('#map-show')
         function mapWindow(value) {
             if (value == 'close') {
                 mapWindowDiv.style.display = 'none';

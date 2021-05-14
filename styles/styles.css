@@ -1,6 +1,6 @@
 body {
     padding: 1.5em;
-    background: white;
+    background: #F2F0F7;
 }
 
 .menu {
@@ -78,8 +78,8 @@ body {
     color: rgb(90, 90, 90);
 }
 
-.bi {
-    color: white;
+navbar > .bi {
+    color: rgb(90, 90, 90);
 }
 
 .card {
@@ -255,7 +255,7 @@ iframe {
 }
 
 .navbar-expand-md.navigation {
-    background-color: #2A231F;
+    background-color: #F6F6F6;
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
     height: 4.5rem;
 }
