@@ -283,6 +283,10 @@ iframe {
     overflow-y: visible;
 }
 
+.events-images {
+    margin-bottom: 2rem;
+}
+
 .events-images > .table > img {
     height: 40rem;
 }
