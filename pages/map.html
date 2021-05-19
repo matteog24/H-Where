@@ -17,17 +17,17 @@
   <body>
     <nav class="navbar-expand-md fixed-top navigation">
       <div class="navbar container-fluid">
-        <a href="../index.html"><i class="bi bi-arrow-left-circle-fill"></i></a>
-        <a class="navbar-brand text-center" href="#"><i class="bi bi-map"></i> Map</a>
+        <a id="back" href="../index.html"><i class="bi bi-arrow-left-circle-fill"></i></a>
+        <a class="navbar-brand text-center" href="#"><i class="bi bi-map"></i> Search by Pin</a>
       </div>
     </nav>
 
-    <div style="margin-bottom: 60px;"></div>
+    <div style="margin-bottom: 2.5rem;"></div>
 
     <div class="flex">
       <section>
         <div>
-          <img src="../assets/map.png" width="100%" alt="Map of the campus" usemap="#campus-map" id="campus-map-photo">
+          <img src="../assets/map.png" width="90%" alt="Map of the campus" usemap="#campus-map" id="campus-map-photo">
           
           <map name="campus-map" id="campus-map">
               <area onclick="getDirections(1, 'myp')" href="./tours/myp.html" alt="myp-dp" title="myp-dp" coords="659,1125,885,823" shape="rect">
@@ -60,12 +60,17 @@
     <section id="iframe" style="position: relative" scrolling="no">
       
     </section>
-    <div style="color: black;">
-      <li><div class="square-gradient" style="background-image: linear-gradient(to right, #FF004F, #FF0075)"></div> Schools📚</li>
-      <li><div class="square-gradient" style="background-image: linear-gradient(to right, #FF8500, #FFC900)"></div> Sports🏋️</li>
-      <li><div class="square-gradient" style="background-image: linear-gradient(to right, #00CBFF, #00FFDB)"></div> Convention🎤</li>
-      <li><div class="square-gradient" style="background-image: linear-gradient(to right, #DD52E5, #81B5F9)"></div> Restaurants🧑‍🍳</li>
-  </p></div>
+
+    <section id="legenda">
+      <div style="color: black;">
+        <li><div class="square-gradient" style="background-image: linear-gradient(to right, #FF004F, #FF0075)"></div> Schools📚</li>
+        <li><div class="square-gradient" style="background-image: linear-gradient(to right, #FF8500, #FFC900)"></div> Sports🏋️</li>
+        <li><div class="square-gradient" style="background-image: linear-gradient(to right, #00CBFF, #00FFDB)"></div> Convention🎤</li>
+        <li><div class="square-gradient" style="background-image: linear-gradient(to right, #DD52E5, #81B5F9)"></div> Restaurants🧑‍🍳</li>
+      </div>
+    </section>
+
+    <a href="#legenda" class="legenda btn btn-primary fixed-bottom"><i class="bi bi-question-circle-fill"></i></a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="../js/map.js"></script>

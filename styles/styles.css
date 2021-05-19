@@ -49,36 +49,31 @@ body {
 
 .list-group-item {
     border-radius: 20px;
-}
-
-.list-group-item {
     text-align: center;
     padding: 12px;
     background-color: transparent;
     border: none;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: large;
 }
 
 .navbar {
     width: 95%;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: relative;
+    justify-content: center;
     font-size: 1.2rem;
 }
 
-.navbar-brand {
+.navbar > #back {
     position: absolute;
-    top: 90%;
-    left: 50%;
-    margin: -35px 0 0 -35px;
-    color: rgb(90, 90, 90);
+    left: 0
 }
 
-navbar > .bi {
+.navbar-brand {
+    color: rgb(90, 90, 90);
+    font-size: 1.3rem;
+}
+
+nav> .bi {
     color: rgb(90, 90, 90);
 }
 
@@ -149,9 +144,8 @@ a:hover > .card > .card-img-overlay > .card-title {
 }
 
 hr {
-    background-color: #eee;
-    color: #eee;
-    height: 10px;
+    border: none;
+    background-color: #000000;
     opacity: 0.7;
 }
 
@@ -161,10 +155,6 @@ hr {
     transition: opacity 0.3s ease-in-out;
 }
 
-#alfabeto2 {
-    height: 35rem;
-}
-
 .list-group {
     border-radius: 20px;
     transition: opacity 0.3s ease-in-out;
@@ -172,7 +162,6 @@ hr {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 15rem;
     transition: left 0.3s ease-in-out;
 }
 
@@ -257,10 +246,11 @@ iframe {
 .navbar-expand-md.navigation {
     background-color: #F6F6F6;
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
-    height: 4.5rem;
+    height: 3.3rem;
 }
 
 .list-group-item {
+    margin-bottom: 1rem;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(255, 255, 255, 0);
@@ -300,9 +290,15 @@ iframe {
     margin-left: 12rem;
 }
 
-.class-href {
-    text-decoration: none;
-    color: black;
+.fixed-bottom {
+    left: inherit;
+    right: 1rem;
+    bottom: 1rem;
+    border-radius: 100px;
+}
+
+.legenda {
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 500px) {
@@ -341,10 +337,6 @@ iframe {
     #category2 > #group {
         flex: 50%;
         justify-content: space-between;
-    }
-
-    .list-group {
-        height: 25rem;
     }
     
 }
