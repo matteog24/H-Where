@@ -165,10 +165,6 @@ hr {
     transition: left 0.3s ease-in-out;
 }
 
-#alfabeto2, #category2 {
-    transition: opacity 0.3s ease-in-out;
-}
-
 #legenda {
     font-size: 1.2rem;
 }
@@ -255,6 +251,7 @@ iframe {
 
 .list-group-item {
     margin-bottom: 1rem;
+    font-size: 1.2rem;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(255, 255, 255, 0);
@@ -305,7 +302,8 @@ iframe {
     font-size: 3rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
+
     .card-img-overlay > .card-title {
         font-size: 7vw;
     }
@@ -313,6 +311,12 @@ iframe {
     .grid {
         display: block;
     }
+
+    #category2 {
+        display: block!important;
+        height: 15rem!important;
+    }
+
 }
 
 @media only screen and (min-width: 600px) {

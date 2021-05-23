@@ -2,85 +2,28 @@
 let w = window.innerWidth;
 let h = window.innerHeight;
 
-/* function checkScreen() {
-    if (w > 1200) {
-        $(div).hide();
-        text.innerText = "Sorry, your device is too big!"
-        text.style.cssText = "position: absolute; width: 100%; heigth: 100%; color: white; text-align: center;"
-        document.body.appendChild(text);
-    }
-    else if (w < 1200) {
-        text.remove();
-        $(div).show(); 
-    }
-} */
-
 function change(value) {
     let category = document.getElementById('category');
     let categoryList = document.getElementById('category2')
     let alfabeto = document.getElementById('alfabeto');
     let alfabetoList = document.getElementById('alfabeto2');
 
-    if (value == alfabeto) {
+    if (value == 'alfabeto') {
         category.style.opacity = "0.4"
         alfabeto.style.opacity = "1"
+        alfabetoList.style.display = 'block'
+        categoryList.style.display = "none"
 
-        alfabetoList.style.overflow = "visible"
-        alfabetoList.style.opacity = "1"
-        alfabetoList.style.height = "90%"
-
-        checkListElement("height", alfabetoList);
-
-        categoryList.style.opacity = "0"
-        categoryList.style.overflow = "hidden"
-        categoryList.style.height = "0"
     }
-    else if (value == category) {
+    
+    else if (value == 'category') {
         alfabeto.style.opacity = "0.4"
         category.style.opacity = "1"
-
-        categoryList.style.overflow = "visible"
+        categoryList.style.overflow = "inherit"
         categoryList.style.opacity = "1"
-        categoryList.style.height = "90%"
+        categoryList.style.display = "flex"
+        alfabetoList.style.display = "none"   
 
-        alfabetoList.style.opacity = "0"
-        alfabetoList.style.overflow = "hidden"
-        alfabetoList.style.height = "0"    
-        
-        checkListElement("width", categoryList);
-
-        let elementsOfList = document.querySelectorAll('#list');
-
-        setHeight("height", elementsOfList);
-    }
-}
-
-function setHeight(element, value) {
-
-    for (let a = 0; a < element.length; a++) {
-        element[a].style.height = value;
-    }
-}
-
-function checkListElement(propriety, element) {
-    w = window.innerWidth;
-    h = window.innerHeight;
-
-    if (propriety == "height") {
-        if (h <= 300) {
-            element.style.height = "auto";
-        }
-        else if (h >= 300) {
-            element.style.height = "90%"
-        }
-    }
-    else if (propriety == "width") {
-        if (w <= 500) {
-            element.style.height = "20rem";
-        }
-        else if (w >= 600 || h <= 400) {
-            element.style.height = "20rem"
-        }
     }
 }
     
