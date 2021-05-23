@@ -11,19 +11,20 @@ function change(value) {
     if (value == 'alfabeto') {
         category.style.opacity = "0.4"
         alfabeto.style.opacity = "1"
-        alfabetoList.style.display = 'block'
-        categoryList.style.display = "none"
+        $(alfabetoList).show();
 
+        categoryList.style.height = "0"
+        categoryList.style.overflow = "none"
+        categoryList.style.opacity = "0"
     }
     
     else if (value == 'category') {
         alfabeto.style.opacity = "0.4"
         category.style.opacity = "1"
-        categoryList.style.overflow = "inherit"
+        categoryList.style.height = "90%"
+        categoryList.style.overflow = "auto"
         categoryList.style.opacity = "1"
-        categoryList.style.display = "flex"
-        alfabetoList.style.display = "none"   
-
+        $(alfabetoList).hide();
     }
 }
     
@@ -33,15 +34,8 @@ function getDirections(startPole, place) {
     let directionsArray = [];
     let listOfDirections = [];
     let list = document.getElementById('list');
-
     let iframeSection = document.getElementById('iframe');
-
     iframeSection.innerHTML = '';
-    // let svg = document.getElementById('campus-map-photo');
-    // let myp_pin = document.getElementById('myp-dp');
-    // let pyp_pin = document.getElementById('pyp');
-
-    // (myp_pin, pyp_pin).style.opacity = "0.3"
 
     if (directionsText.childElementCount = 1) {
         directionsText.innerHTML = ""

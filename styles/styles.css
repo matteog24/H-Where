@@ -160,9 +160,12 @@ hr {
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 90%;
     width: 100%;
     transition: left 0.3s ease-in-out;
+}
+
+#alfabeto2 {
+    height: 90%;
 }
 
 #legenda {
@@ -279,7 +282,7 @@ iframe {
 }
 
 .events-images > .table > img {
-    height: 40rem;
+    height: 25rem;
 }
 
 .events-images > .d-flex > .float-start {
@@ -288,7 +291,7 @@ iframe {
 }
 
 .events-images > .d-flex > .float-end {
-    margin-left: 14rem;
+    margin-left: 8.5rem;
 }
 
 .fixed-bottom {
@@ -302,6 +305,12 @@ iframe {
     font-size: 3rem;
 }
 
+#category2 {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
 @media only screen and (max-width: 600px) {
 
     .card-img-overlay > .card-title {
@@ -310,11 +319,6 @@ iframe {
 
     .grid {
         display: block;
-    }
-
-    #category2 {
-        display: block!important;
-        height: 15rem!important;
     }
 
 }
@@ -336,6 +340,7 @@ iframe {
         display: flex;
         flex-wrap: wrap;
         padding: 20px;
+        height: auto;
     }
 
     #category2 > hr {

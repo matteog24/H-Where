@@ -21,7 +21,7 @@
             <input type="checkbox" name="" id="check">
             
             <div class="logo-container">
-                <div onclick="window.location='../../index.html'" style="color: white; cursor: pointer; padding-right: 20px;"><i class="bi bi-arrow-left-circle-fill"></i></div>
+                <div onclick="window.location='javascript:history.back()'" style="color: white; cursor: pointer; padding-right: 20px;"><i class="bi bi-arrow-left-circle-fill"></i></div>
                 <h3 class="logo">MYP - DP</h3>
             </div>
 
@@ -61,7 +61,7 @@
                             <div class="modal-background"></div>
                             <div>
                               <p class="image is-4by3">
-                                <img src="../../assets/timetable/4b/myp.png" alt="">
+                                <img class="img-map" src="../../assets/h-f/places/myp/myp.jpg" alt="">
                               </p>
                             </div>
                             <button class="modal-close is-large" aria-label="close" onclick="mapWindow('close')"></button>
@@ -99,6 +99,21 @@
                 mapWindowDiv.style.display = 'block';
             }
         }
+
+        let h = window.innerHeight - 50;
+        let imgMap = document.querySelector('.img-map');
+        function mapDimension(h) {
+            imgMap.style.height = h;
+            imgMap.style.minWidth = h;
+            imgMap.style.width = h;
+
+            window.onresize = function() {
+                h = window.innerHeight;
+                mapDimension(h)
+            }
+        }
+
+        mapDimension(h)
     </script>
   </body>
 </html>
