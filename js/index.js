@@ -92,6 +92,10 @@ function getDirections(startPole, place) {
             heading.innerHTML = "Innovation Area";
             directionsArray = ['⬆️ for 100m', '➡️'];
         }
+        else if (place == 'welcome-center') {
+            heading.innerHTML = "Welcome Center";
+            directionsArray = ['⬆️ for 100m', '➡️'];
+        }
 
         directionsArray.forEach(function(element) {
             listOfDirections.push("<li>" + element + "</li>");
