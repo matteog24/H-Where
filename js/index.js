@@ -48,53 +48,52 @@ function getDirections(startPole, place) {
     if (startPole == 1) {
         if (place == 'myp') {
             heading.innerHTML = "MYP & DP";
-            directionsArray = ['⬆️ for 100m', '➡️'];
-            iframe.src = 'https://orbix360.com/t/lCJMyrscsaMtFmjmgxmtOXsa5wp2/5143489931116544/test?embed=yes'
-            
+            directionsArray = ['<a href="https://h-is.link/tour_mypdp_ita">Italian</a>', '<a href="https://h-is.link/tour_mypdp_eng">English</a>'];
+            // iframe.src = 'https://orbix360.com/t/lCJMyrscsaMtFmjmgxmtOXsa5wp2/5143489931116544/test?embed=yes'
         }
         else if (place == 'pyp') {
             heading.innerHTML = "PYP";
-            directionsArray = ['⬇️ for 10m', '⬅️'];
+            directionsArray = ['<a href="https://h-is.link/tour_pyp_ita">Italian</a>', '<a href="https://h-is.link/tour_pyp_eng">English</a>'];
         }
         else if (place == 'college') {
             heading.innerHTML = "College";
-            directionsArray = ['⬆️ for 250m', '➡️'];
+            directionsArray = ['<a href="https://h-is.link/tour_college_ita">Italian</a>', '<a href="https://h-is.link/h-is.link/tour_college_eng">English</a>'];
         }
         else if (place == 'student-house') {
             heading.innerHTML = "Student House";
-            directionsArray = ['⬆️ for 50m', '⬅️', '⬆️ for 20m', '⬅️', '⬆️ for 50m', '➡️'];
+            directionsArray = ['<a href="https://h-is.link/tour_boarding_ita">Italian</a>', '<a href="https://h-is.link/tour_boarding_eng">English</a>'];
         }
         else if (place == 'library') {
             heading.innerHTML = "Library";
-            directionsArray = ['⬆️ for 50m', '⬅️ for 10m', '⬆️'];
+            directionsArray = ['<a href="https://h-is.link/tour_library_ita">Italian</a>', '<a href="https://h-is.link/tour_library_eng">English</a>'];
         }
         else if (place == 'sports-center') {
             heading.innerHTML = "Sports Center";
-            directionsArray = ['⬆️ for 100m', '➡️'];
+            directionsArray = ['<a href="https://h-is.link/tour_sportsfacilities_ita">Italian</a>', '<a href="https://h-is.link/tour_sportsfacilities_eng">English</a>'];
         }
         else if (place == 'bistro') {
             heading.innerHTML = "Bistro";
-            directionsArray = ['⬆️ for 100m', '➡️'];
+            directionsArray = ['<a href="https://h-is.link/tour_bistro_ita">Italian</a>', '<a href="https://h-is.link/tour_bistro_eng">English</a>'];
         }
         else if (place == 'football') {
             heading.innerHTML = "Football";
-            directionsArray = ['⬆️ for 100m', '➡️'];
+            directionsArray = ['Football'];
         }
         else if (place == 'hall') {
             heading.innerHTML = "Hall";
-            directionsArray = ['⬆️ for 100m', '➡️'];
+            directionsArray = ['<a href="https://h-is.link/tour_hfarmhq_ita">Italian</a>', '<a href="https://h-is.link/tour_hfarmhq_eng">English</a>'];
         }
         else if (place == 'sierra') {
             heading.innerHTML = "Sierra";
-            directionsArray = ['⬆️ for 100m', '➡️'];
+            directionsArray = ['Sierra'];
         }
         else if (place == 'innovation-area') {
             heading.innerHTML = "Innovation Area";
-            directionsArray = ['⬆️ for 100m', '➡️'];
+            directionsArray = ['<a href="https://h-is.link/tour_campus_ita">Italian</a>', '<a href="https://h-is.link/tour_campus_eng">English</a>'];
         }
         else if (place == 'welcome-center') {
             heading.innerHTML = "Welcome Center";
-            directionsArray = ['⬆️ for 100m', '➡️'];
+            directionsArray = ['<a href="https://h-is.link/tour_welcomecenter_eng">Italian</a>', '<a href="https://h-is.link/tour_welcomecenter_eng">English</a>'];
         }
 
         directionsArray.forEach(function(element) {
